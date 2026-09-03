@@ -2,6 +2,14 @@
 
 API en Node.js con Express y TypeScript que expone endpoints contra PostgreSQL y MongoDB.
 
+## How to run (Docker)
+
+1. Ensure Docker Desktop is installed and running.
+2. Run `npm run docker:up` to build and start the API and databases in the background.
+3. Access the API at `http://localhost:3000`.
+4. To view API logs, use `npm run docker:logs`.
+5. To stop the containers, use `npm run docker:down`.
+
 ## Requisitos
 
 - Node.js 18+
