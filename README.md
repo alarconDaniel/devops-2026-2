@@ -60,12 +60,12 @@ curl http://localhost:3000/health
 curl http://localhost:3000/api/postgres/health
 curl -X POST http://localhost:3000/api/postgres/users ^
   -H "Content-Type: application/json" ^
-  -d "{\"name\":\"Ana\",\"email\":\"ana@example.com\"}"
+  -d "{\"name\":\"Belle\",\"email\":\"belle@example.com\"}"
 
 curl http://localhost:3000/api/mongo/health
 curl -X POST http://localhost:3000/api/mongo/users ^
   -H "Content-Type: application/json" ^
-  -d "{\"name\":\"Luis\",\"email\":\"luis@example.com\"}"
+  -d "{\"name\":\"Sigrid\",\"email\":\"sigrid@example.com\"}"
 ```
 
 Body esperado en POST `/users`:
