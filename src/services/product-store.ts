@@ -4,8 +4,6 @@
  * Implementen los métodos. No cambien las firmas ni los códigos de ProductError.
  */
 
-import { randomUUID } from "node:crypto";
-
 export type Product = {
   id: string;
   name: string;
@@ -43,16 +41,7 @@ export type ListProductsQuery = {
   maxPrice?: number;
 };
 
-export type ProductErrorCode =
-  | "VALIDATION"
-  | "NOT_FOUND"
-  | "DUPLICATE_SKU"
-  | "INSUFFICIENT_STOCK";
-
-const NAME_MAX = 80;
-const SKU_MIN = 2;
-const SKU_MAX = 32;
-const SKU_PATTERN = /^[A-Z0-9]+(?:-[A-Z0-9]+)*$/;
+export type ProductErrorCode = "VALIDATION" | "NOT_FOUND" | "DUPLICATE_SKU" | "INSUFFICIENT_STOCK";
 
 export class ProductError extends Error {
   readonly code: ProductErrorCode;
