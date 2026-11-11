@@ -75,3 +75,4 @@ if (process.env.GITHUB_STEP_SUMMARY) {
 }
 
 process.exit(run.status ?? 0);
+

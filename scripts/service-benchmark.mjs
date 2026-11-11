@@ -270,3 +270,4 @@ runBenchmark().catch((err) => {
   console.error("Error en benchmark:", err);
   process.exit(1);
 });
+
